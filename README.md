@@ -176,4 +176,47 @@ Validated the overall multi-tier architecture, preparing the environment for fut
 
 ---
 
+**Azure Migrate Deployment**
 
+Our next step is to deploy the Azure Migrate appliance into your local environment. Then Use Azure Migrate to scan our local VMs. Generate an assessment report to estimate the baseline Total Cost of Ownership (TCO) if you were to move these specific workloads into the cloud exactly as they are
+
+
+Create the Azure Migrate Project
+
+<img width="962" height="851" alt="image" src="https://github.com/user-attachments/assets/fb2e6b66-d7ef-4d83-82e5-5b6fd844e59b" />
+
+Start Discovery
+
+<img width="940" height="855" alt="image" src="https://github.com/user-attachments/assets/a8c5293a-39c8-4f0d-94ff-107b07a61be9" />
+
+
+<img width="940" height="852" alt="image" src="https://github.com/user-attachments/assets/f121faa5-559f-4d87-a309-c23e4812d3ed" />
+
+The files downloaded (.msi installers and AzureMigrateCollector.ps1) are installers that turn an existing Windows Server or Windows 11/10 machine into an Azure Migrate Collector. Create a third Windows Server VM
+
+<img width="938" height="716" alt="Screenshot 2026-07-15 111340" src="https://github.com/user-attachments/assets/b3fb7813-3084-442b-ad3b-c3050ff24e92" />
+
+Made the necessary network configuartion changes
+<img width="1001" height="517" alt="image" src="https://github.com/user-attachments/assets/72f4a61a-5c25-4d31-9001-796c474c5322" />
+
+
+Now that i have the Azure Migrator Collecter
+<img width="822" height="155" alt="image" src="https://github.com/user-attachments/assets/7348de1b-f605-4c1f-b1c3-86a72629d304" />
+
+Allow local PowerShell scripts:
+[Set-ExecutionPolicy RemoteSigned -Scope Process]
+<img width="452" height="20" alt="image" src="https://github.com/user-attachments/assets/309106e2-63ec-4f6c-858c-32b5e4247dc4" />
+
+Now lets run the installer
+[.\AzureMigrateCollector.ps1]
+<img width="962" height="480" alt="image" src="https://github.com/user-attachments/assets/ce5162ea-f9bb-47fb-bbc1-a297999d4238" />
+
+Microsoft's installer script will then:
+
+Install IIS
+Install all the MSI packages
+Configure the Collector services
+Create the Appliance Configuration Manager
+Launch the Configuration Manager automatically when finished
+
+This took around 18 minutes.
