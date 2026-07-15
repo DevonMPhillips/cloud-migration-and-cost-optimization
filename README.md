@@ -220,3 +220,18 @@ Create the Appliance Configuration Manager
 Launch the Configuration Manager automatically when finished
 
 This took around 18 minutes.
+
+
+---
+
+So I had to restart everything. Azure doesnt  play well well Oracle box.
+
+Create MariaDB server
+<img width="872" height="657" alt="image" src="https://github.com/user-attachments/assets/6bb3e178-8571-4d54-b482-fb3431ec3b1e" />
+
+Create Nginx Server
+<img width="872" height="657" alt="image" src="https://github.com/user-attachments/assets/a8815f46-dac7-4c8f-8a74-bd3d05c20eb8" />
+
+Azure Migration Server
+<img width="870" height="655" alt="image" src="https://github.com/user-attachments/assets/315f96b6-2321-4547-80e4-8ff9f21e9344" />
+
