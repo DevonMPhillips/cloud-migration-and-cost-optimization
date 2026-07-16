@@ -235,3 +235,15 @@ Create Nginx Server
 Azure Migration Server
 <img width="870" height="655" alt="image" src="https://github.com/user-attachments/assets/315f96b6-2321-4547-80e4-8ff9f21e9344" />
 
+Install MariaDB
+<img width="767" height="12" alt="image" src="https://github.com/user-attachments/assets/003e4fce-1f32-417a-8042-76265020b687" />
+
+Enable MariaDB
+<img width="882" height="50" alt="image" src="https://github.com/user-attachments/assets/117b8fa1-aa30-4346-85ea-33b4d0dd2666" />
+
+MariaDB running 
+<img width="1020" height="412" alt="image" src="https://github.com/user-attachments/assets/8bd7fbca-2cb2-48e1-9be2-6db5e50b0810" />
+
+Nginx Firewall setup
+<img width="621" height="220" alt="image" src="https://github.com/user-attachments/assets/e91e0364-8ad1-4063-b664-3afa001cc080" />
+
