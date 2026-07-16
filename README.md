@@ -247,3 +247,59 @@ MariaDB running
 Nginx Firewall setup
 <img width="621" height="220" alt="image" src="https://github.com/user-attachments/assets/e91e0364-8ad1-4063-b664-3afa001cc080" />
 
+MariaDB setup
+
+Create Database
+<img width="331" height="31" alt="image" src="https://github.com/user-attachments/assets/97ef3b7c-362f-4622-a1b7-b03ccb34db30" />
+
+Create User
+<img width="667" height="32" alt="image" src="https://github.com/user-attachments/assets/26299bf7-9804-4af4-95c8-c46adc668b03" />
+
+Grant privileges
+<img width="726" height="31" alt="image" src="https://github.com/user-attachments/assets/ed96f863-c380-4b3e-8a85-44f30ed3ef52" />
+
+<img width="612" height="32" alt="image" src="https://github.com/user-attachments/assets/ac7d5886-3e87-423d-936d-6850152363af" />
+
+Apply privilges
+<img width="221" height="32" alt="image" src="https://github.com/user-attachments/assets/d689e290-8386-48b7-ba7b-5d99eb582ebe" />
+
+Exit
+<img width="341" height="32" alt="image" src="https://github.com/user-attachments/assets/a1c36899-0e19-4b59-b09b-84aa4aae3e16" />
+
+
+Allow Remote Database Connections. By default MariaDB only listens locally.
+
+Edit the bind-address:
+
+[sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf]
+
+
+<img width="1020" height="762" alt="image" src="https://github.com/user-attachments/assets/83b8eb0c-5611-4374-8c1e-9451e3f698ba" />
+
+Restart MariaDB:
+[sudo systemctl restart mariadb]
+<img width="505" height="12" alt="image" src="https://github.com/user-attachments/assets/d560c2ba-7444-41c9-99bf-685953ab82cc" />
+
+
+Phase 7 — Allow Database Traffic
+
+If UFW is enabled:
+
+[sudo ufw allow from 10.0.0.0/24 to any port 3306]
+
+sudo ufw status
+
+<img width="705" height="222" alt="image" src="https://github.com/user-attachments/assets/89034279-6062-4615-badb-64b9bc9a6336" />
+
+
+Test Web VM → Database VM Connectivity From Web Server:
+
+Install MariaDB client:
+
+[sudo apt install mariadb-client -y]
+
+Connect:
+
+[mysql -h 10.0.0.17 -u webuser -p]
+
+<img width="1019" height="172" alt="image" src="https://github.com/user-attachments/assets/0a3c9aee-0aac-4f2e-b249-b066ae335bc9" />
