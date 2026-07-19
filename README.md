@@ -303,3 +303,51 @@ Connect:
 [mysql -h 10.0.0.17 -u webuser -p]
 
 <img width="1019" height="172" alt="image" src="https://github.com/user-attachments/assets/0a3c9aee-0aac-4f2e-b249-b066ae335bc9" />
+
+---
+Add steps: 
+
+Azure Migrate
+
+Copy the files locally
+
+Create a directory:
+
+[mkdir C:\AzureMigrate]
+
+<img width="592" height="212" alt="image" src="https://github.com/user-attachments/assets/32659b8b-2305-45db-870a-0aabdc2c7daa" />
+
+Copy everything:
+
+[xcopy Z:\* C:\AzureMigrate\ /E /I].
+
+<img width="797" height="302" alt="image" src="https://github.com/user-attachments/assets/0404ca69-32a5-4a48-8626-9f342181c9da" />
+
+Verify:
+
+<img width="757" height="256" alt="image" src="https://github.com/user-attachments/assets/24768366-fb43-443c-b100-749dd83e605d" />
+
+---
+
+<img width="413" height="242" alt="image" src="https://github.com/user-attachments/assets/6e32e52a-51ff-49ef-8148-10c5bcbb6c57" />
+
+
+Azure Discover 
+generate project Key
+
+<img width="947" height="847" alt="image" src="https://github.com/user-attachments/assets/e20ae520-d8ed-48b4-acf6-f53db7651f8c" />
+
+<img width="952" height="866" alt="image" src="https://github.com/user-attachments/assets/44749e02-f77c-4eb7-81de-dc1477cd7a88" />
+
+Configure the VM with the specs of the azure appilication .VHD
+<img width="872" height="652" alt="image" src="https://github.com/user-attachments/assets/a76ddd06-26bb-4cd9-a319-5acdebd20982" />
+
+<img width="872" height="656" alt="image" src="https://github.com/user-attachments/assets/cf8cde3a-8c62-40e5-b984-6b62d8c9e984" />
+
+verify your Azure Migrate project key
+<img width="952" height="887" alt="image" src="https://github.com/user-attachments/assets/28232889-2f74-4c17-8a2e-2aefbe93944f" />
+
+Refresh
+<img width="957" height="925" alt="image" src="https://github.com/user-attachments/assets/2bc5468c-9e2d-472a-a19a-955fa21b8ad1" />
+
+<img width="955" height="865" alt="image" src="https://github.com/user-attachments/assets/a52611dc-96d3-4166-93ef-786e8ef68b4f" />
